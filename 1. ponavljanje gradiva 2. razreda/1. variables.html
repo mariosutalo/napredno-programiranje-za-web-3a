@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // pravi varijablu user u kojoj je spremljen
+        // tekst i sadržaj varijable se ne može promijeniti
+        // radi const
+        // ako varijabla ima jednu riječ, ona se piše malim slovima
+        const user = 'Mario Šutalo'
+        const age = 41
+        const height = 186
+        // kombinira statički (nešto što se ne mijenja) tekst i sadržaje varijabli
+        // koristimo pascal case naming konvenciju za nazive varijabli, funkcija...
+        const userAndAge = 'My name is' + user + 'age is' + age + ' ' + height
+        // koristimo template literals za spajanje teksta i varijabli
+        // ` - ovo se zove backtick
+        const userAndAgeV2 = `My name is ${user} age is ${age} ${height}`
+        console.log(userAndAgeV2)
+        // jednostruki navodnik se lakše ubaci sa template literals
+        // https://www.w3schools.com/js/js_string_templates.asp
+        const info = `he's ${age} old`
+        console.log(info)
+    </script>
+</body>
+
+</html>
