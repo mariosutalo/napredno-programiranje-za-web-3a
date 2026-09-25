@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // alf + shift + down = kopiranje više linija koda prema dolje
+        // napravili smo objekt koji opisuje automobil
+        // naziv objekta je car
+        const car1 = {
+            // brand je naziv svojstva (eng. property)
+            // 'bmw' je vrijednost svojstva
+            brand: 'Bmw',
+            model: '5 - e60',
+            year: 2008,
+            color: 'blue',
+            power: 110
+        }
+        const car2 = {
+            // brand je naziv svojstva (eng. property)
+            // 'bmw' je vrijednost svojstva
+            brand: 'Alfa Romeo',
+            model: 'Giulia',
+            year: 2015,
+            color: 'blue',
+            power: 110
+        }
+        //Brand je: bmw, model je e60, godište je 2008.
+        // pravimo novu varijablu i u nju spremamo tekst, te ga ispisujemo
+        const carInfo = `Brand je: ${car1.brand}, 
+        model je ${car1.model}, godište je ${car1.year}.`
+        console.log(carInfo)
+        // tekst direktno ispisujemo u konzolu
+        console.log(`Brand je: ${car1.brand}, 
+        model je ${car1.model}, godište je ${car1.year}.`)
+    </script>
+</body>
+</html>
