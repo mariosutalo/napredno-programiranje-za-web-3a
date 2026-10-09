@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // zadatak 1. - Ispiši sve vrijednosti iz polju evenNumbers u konzolu
+        // primjer bez korištenja petlji:
+        const evenNumbers = [4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24]
+        console.log(`Number is ${evenNumbers[0]}`)
+        console.log(`Number is ${evenNumbers[1]}`)
+        console.log(`Number is ${evenNumbers[2]}`)
+        console.log(`Number is ${evenNumbers[3]}`)
+        console.log(`Number is ${evenNumbers[4]}`)
+        // primjer sa for petljom
+        for (let index = 0; index < evenNumbers.length; index++) {
+            const element = evenNumbers[index];
+            // u prvom obilasku, index = 0
+            // const element = evenNumbers[0]
+            console.log(`For loop version: number is ${element}`)
+        }
+        // zadatak 2. - Ispiši sve brendove automobila u konzolu pomoću for petlje
+        const carBrands = ['Audi', 'Bmw', 'Ford']
+        for (let index = 0; index < carBrands.length; index++) {
+            const element = carBrands[index];
+            console.log(`For loop version: number is ${element}`)
+        }
+        // zadatak 3. - Dodaj 3 televizora u polje tvs, te ispiši svojstva
+        // televizora u konzolu
+        const tvs = [
+            { brand: 'Samsung', size: 55, price: 300 },
+            { brand: 'Lg', size: 45, price: 250 },
+            { brand: 'Toshiba', size: 55, price: 350 },
+        ]
+        for (let index = 0; index < tvs.length; index++) {
+            const element = tvs[index];
+            //primjer ispisa
+            // Tv brand is Samsung, size is 55 and price is 300
+            console.log(`brand is ${element.brand} size is ${element.size} price is ${element.price}`)
+            
+        }
+    </script>
+</body>
+
+</html>
