@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const carPower = 100
+        // sintaksa za pisanje if uvjeta:
+        // if (uvjet)
+        if (carPower > 150) {
+            console.log('Auto je brz')
+        }
+
+        const temperature = 34
+        const isSummer = true
+        // If uvjet se uvijek svodi na rezultat true ili false
+        // Kako program svodi uvjet na true ili false, uvrštava vrijednosti varijabli
+        // 1. 34 > 23 && true === true
+        // 2. true && true === true
+        // 3. true === true
+        // 4. true
+        if (temperature > 32 && isSummer === true) {
+            console.log('Mozemo na more')
+        }
+        // skracena verzija === true nije potrebno
+        if (temperature > 32 && isSummer) {
+            console.log('Mozemo na more')
+        }
+
+        if (isSummer) {
+            console.log('Ljeto')
+        } else {
+            console.log('Nije ljeto')
+        }
+
+
+        const carWeight = 3000
+        if (carWeight < 1100) {
+            console.log('Sportsko auto')
+        } else if (carWeight > 1100 && carWeight < 1500) {
+            console.log('Limuzina')
+        } else if (carWeight > 1500 && carWeight < 2000) {
+            console.log('SUV')
+        } else {
+            console.log('Kamion')
+        }
+
+        // napraviti program u kojem ćete unijeti 5 ocjena
+        // te ispitati svaku ocjenu da li je ocjena veća od 3
+        // ako jeste: u konzolu ispisati učenik je prošao,
+        // ako nije ispisati učenik nije prošao
+        const grades = [3, 3, 2, 1, 5, 3, 2, 2, 3, 4, 3, 2, 3, 4, 4, 3, 3, 2, 3, 4, 4, 3, 3, 3, 4, 4, 3]
+        for (let index = 0; index < grades.length; index++) {
+            const element = grades[index];
+            if (element > 3) {
+                console.log('Ocjena je veca od 3')
+            } else {
+                console.log('ucenik nije prosao')
+            }
+        }
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
