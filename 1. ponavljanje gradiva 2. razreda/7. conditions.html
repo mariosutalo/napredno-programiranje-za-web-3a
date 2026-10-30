@@ -60,9 +60,38 @@
             if (element > 3) {
                 console.log('Ocjena je veca od 3')
             } else {
-                console.log('ucenik nije prosao')
+                console.log('Ucenik nije prosao')
             }
         }
+
+        // Napraviti program u kojem ćete unijeti 5 učenika
+        // Svaki učenik ima: ime, prezime i opci uspjeh
+        // Za svakog učenika ispisati njegovo ime i prezime
+        // i ako ima opci uspjeh veći od 3, napisati da je dobio stipendiju
+        // a ako je ocjena manja ili jednaka 3, napisati da nije dobio stipendiju
+        // Primjer ispisa u konzoli: Ime je Ante, prezime je Antić i učenik je dobio stipendiju
+
+        const students = [
+            { name: 'Mario', surname: 'Šutalo', grade: 3.4 },
+            { name: 'Mario', surname: 'Šutalo', grade: 2.5 },
+            { name: 'Mario', surname: 'Šutalo', grade: 3 },
+            { name: 'Mario', surname: 'Šutalo', grade: 4 },
+            { name: 'Mario', surname: 'Šutalo', grade: 2 },
+        ]
+        let StudentGradesSum = 0
+        for (let index = 0; index < students.length; index++) {
+            const student = students[index];
+            if (student.grade > 3) {
+                console.log(`Ime je ${student.name}, prezime je ${student.surname} i učenik je dobio stipendiju`)
+            } else {
+                console.log(`Ime je ${student.name}, prezime je ${student.surname} i učenik nije dobio stipendiju`)
+            }
+            StudentGradesSum = StudentGradesSum + student.grade
+        }
+        const studentAverageGrade = StudentGradesSum / students.length
+        console.log(`Prosjecna ocjena studenta je ${studentAverageGrade}`)
+
+
 
 
 
