@@ -127,13 +127,45 @@
 
         // pravilna verzija pomocu funkcije
         // funkcije se koriste i da izbjegnemo pisanje duplog koda
+        // a, b su parametri funkcije
+        // parametri funkcije su varijable koji mogu sadržavati bilo koju vrstu podataka
         function calculateSurfaceArea(a, b) {
             const surface = a * b
             console.log(`Povrsina je ${surface}`)
         }
-        calculateSurfaceArea(12, 10)
-        calculateSurfaceArea(30, 21)
-        calculateSurfaceArea(1, 12)
+        //calculateSurfaceArea(12, 10)
+        //calculateSurfaceArea(30, 21)
+        //calculateSurfaceArea(1, 12)
+
+
+        // Napraviti funkciju koja ima 3 parametra: tip, snaga i da li je dizel
+        // u funkciji u konzolu ispisati tekst: Tip automobila je "tip", snaga je "snaga", auto nije dizel
+        function printCarDetails(carType, power, isDiesel) {
+            if (isDiesel === true) {
+                console.log(`Tip automobila je ${carType}, snaga je ${power} i auto je dizel`)
+            } else {
+                console.log(`Tip automobila je ${carType}, snaga je ${power} i auto nije dizel`)
+            }
+        }
+
+        printCarDetails('Audi A4 Tdi', 120, true)
+        printCarDetails('Bmw 320i', 130, false)
+
+        // Napraviti funkciju koja u konzolu ispisuje tarifni model za struju
+        // Ako je vrijeme od 6 do 22 onda je viši tarifni model, u suprotnom je niži
+        // U konzolu ispisati viši tarifni model ili niži tarifni model
+        // Funkciju pozvati 5 puta sa različitim vremenima
+        // || je or operator, dovoljno je da jedan izraz bude true
+        // i kod unutar if-a će biti izvršen
+        function checkTariffRate(time) {
+            if (time >= 22 || time <= 6) {
+                console.log('Niža tarifa')
+            } else {
+                console.log('Viša tarifa')
+            }
+        }
+        checkTariffRate(13)
+        checkTariffRate(4)
     </script>
 </body>
 
