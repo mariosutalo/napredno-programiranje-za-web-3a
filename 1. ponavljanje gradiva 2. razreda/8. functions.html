@@ -157,6 +157,7 @@
         // Funkciju pozvati 5 puta sa različitim vremenima
         // || je or operator, dovoljno je da jedan izraz bude true
         // i kod unutar if-a će biti izvršen
+        // ako funkcija ništa ne vraća, to su void
         function checkTariffRate(time) {
             if (time >= 22 || time <= 6) {
                 console.log('Niža tarifa')
@@ -166,6 +167,35 @@
         }
         checkTariffRate(13)
         checkTariffRate(4)
+
+        // Funkcije koje vraćaju vrijednost
+        // Deklaracija funkcije (tijelo funkcije)
+        // Ova funkcija nešto vraća, funkcija sa povratnom vrijednošću
+        function sumOfTwoNumbers(a, b) {
+            const sum = a + b
+            return sum
+        }
+
+        function callSumOfTwoNumbers() {
+            console.log(`Sum of two numbers is ${sumOfTwoNumbers(1, 4)}`)
+            console.log(`Sum of two numbers is ${sumOfTwoNumbers(4, 3)}`)
+            console.log(`Sum of two numbers is ${sumOfTwoNumbers(1, 324)}`)
+            console.log(`Sum of two numbers is ${sumOfTwoNumbers(1, 34)}`)
+        }
+        callSumOfTwoNumbers()
+
+        function kwToHp(car) {
+            const powerInHp = car.power * 1.36
+            return powerInHp
+        }
+
+        const car = { brand: 'Audi', power: 110 }
+        const powerInHp = kwToHp(car)
+        console.log(`power in hp is ${powerInHp}`)
+
+
+
     </script>
 </body>
+
 </html>
